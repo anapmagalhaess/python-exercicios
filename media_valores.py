@@ -7,14 +7,16 @@ Digite um número (-1 para sair): -1
 Média: 6.0"""
 
 valorTotal = 0
+contador = 0
 
 while True:
     n1 = int(input('Digite um número (-1 para sair): '))
-    n1 += n1
-    contador += 1
     if n1 == -1:
+        n1 =+ 1
         break
+    valorTotal = valorTotal + n1
+    contador += 1
 
-valorTotal = n1 / contador
-
-print(f'Soma total = {valorTotal}')
+print(contador)
+valorTotal = valorTotal / contador
+print(f'Média: {valorTotal}')
